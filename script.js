@@ -1,3 +1,8 @@
 document.getElementById('myButton').addEventListener('click', function() {
-    document.getElementById('message').textContent = 'دکمه کلیک شد!';
+    var messageElement = document.getElementById('message');
+    if (messageElement.textContent === 'دکمه کلیک شد!') {
+        messageElement.textContent = 'دوباره کلیک شد!';
+    } else {
+        messageElement.textContent = 'دکمه کلیک شد!';
+    }
 });
